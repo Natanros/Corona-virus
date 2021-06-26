@@ -20,18 +20,17 @@ export default function Countries_Cases(props) {
       {cases ? (
         <div id="cases">
           <div id="daily-informations">
-            Confirmados hoje: {cases.todayCases}
-            Mortos hoje: {cases.todayDeaths}
-            Recuperados Hoje: {cases.todayRecovered}
+            <p>Confirmados hoje: {cases.todayCases}</p> 
+            <p>Mortos hoje: {cases.todayDeaths}</p>
+            <p>Recuperados Hoje: {cases.todayRecovered}</p>
           </div>
           <div id="country-data">
             <h1 id="titleCase"> {props.match.params.name} </h1>
             <div id="cases-align">
               <p>Confirmados: {cases.cases}</p>
               <p>Recuperados: {cases.recovered}</p>
-              <p> Mortos: {cases.deaths}</p>
+              <p>Mortos: {cases.deaths}</p>
             </div>
-            <img src={cases.countryInfo.flag} alt="country flag" />
           </div>
         </div>
       ) : (
