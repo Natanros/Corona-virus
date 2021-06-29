@@ -24,14 +24,16 @@ export default function Home() {
       <main>
         <div id="ShowCountries">
           {cases.map((countries) => (
-            <div key={countries.countryInfo.id}>
-              <Link
-                to={{
-                  pathname: `/CountryCases/${countries.country}`,
-                }}
-              >
-                <p id="Countries">{countries.country}</p>
-              </Link>
+            <div key={countries.countryInfo.id} id="countries">
+              <div id="style-countries">
+                <Link
+                  to={{
+                    pathname: `/CountryCases/${countries.country}`,
+                  }}
+                >
+                  <p id="countries">{countries.country}</p>
+                </Link>
+              </div>
             </div>
           ))}
         </div>

@@ -19,11 +19,6 @@ export default function Countries_Cases(props) {
     <div>
       {cases ? (
         <div id="cases">
-          <div id="daily-informations">
-            <p>Confirmados hoje: {cases.todayCases}</p> 
-            <p>Mortos hoje: {cases.todayDeaths}</p>
-            <p>Recuperados Hoje: {cases.todayRecovered}</p>
-          </div>
           <div id="country-data">
             <h1 id="titleCase"> {props.match.params.name} </h1>
             <div id="cases-align">
